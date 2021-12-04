@@ -8,9 +8,8 @@ from django.http import JsonResponse
 
 
 def index(request):
-    #return HttpResponse("{\"Message\": \"Hello world!\"}")
     return JsonResponse({'Message': 'Hello world!'})
 
-def index(request):
+def myindex(request):
 	rendered = render_to_string('helloWorld.html')
 	return HttpResponse(rendered)
